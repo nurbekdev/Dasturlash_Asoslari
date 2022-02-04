@@ -8,12 +8,9 @@ http://t.me/BaDBoY_DeV
 My portfolio: http://github.com/uzbekprogrammer
 
 """
-a='SalomDunyoHelloWorld'
-royxat=[]
-for i in a:
-    if i.istitle():
-        royxat.append(i)
 
+a='SalomDunyoHelloWorld'
+royxat = [i for i in a if i.istitle()]
 lis=[]
 
 for i in royxat[1:]:

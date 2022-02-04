@@ -7,6 +7,7 @@ http:\\telegram.me\developing_programmer
 
 """
 
+
 print('1 dan 100 gacha son oylang ')
 a=list(range(1,101))
 l=0
@@ -21,5 +22,5 @@ while q!=1:
         h=m-1
     elif q==2:
         l=m+1
-    s=s+1
+    s += 1
 print(f'{s} ta urinish bilan topdim')

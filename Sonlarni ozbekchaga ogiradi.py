@@ -6,15 +6,16 @@ Mahmudov Abdurahim
 http:\telegram.me\developing_programmer
 
 """
+
 a=int(input('Son kiriting\n>>>'))
 b=len(str(a))
 raqamlar=[]
 sonlar=[]
-for i in range(0,b):
+for _ in range(b):
     s=a%10
     a//=10
     raqamlar.append(s)
-for i in range(0,b):
+for i in range(b):
     if raqamlar[i]==0:
         son=''
     elif raqamlar[i]==1:
@@ -35,7 +36,7 @@ for i in range(0,b):
         son='sakkiz'
     elif raqamlar[i]==9:
         son='toqqiz'
-    if i==1 or i==4 or i==7 or i==10 or i==134125   :
+    if i in [1, 4, 7, 10, 134125]:
         if raqamlar[i]==0:
             son=''
         elif raqamlar[i]==1:
@@ -56,20 +57,20 @@ for i in range(0,b):
             son='sakson'
         elif raqamlar[i]==9:
             son='toqson'
-    elif i==2 or i==5 or i==8 or i==11 or i==14:
+    elif i in [2, 5, 8, 11, 14]:
         if son!='':
-            son=son+' yuz'
+            son = f'{son} yuz'
     elif i==3:
         if raqamlar[3]!=0 or raqamlar[4]!=0 or raqamlar[5]!=0:
-            son=son+' ming'
+            son = f'{son} ming'
     elif i==6:
         if raqamlar[6]!=0 or raqamlar[7]!=0 or raqamlar[8]!=0:
-            son=son+' million'
+            son = f'{son} million'
     elif i==9:
         if raqamlar[9]!=0 or raqamlar[10]!=0 or raqamlar[11]!=0:
-            son=son+' milliard'
+            son = f'{son} milliard'
     elif i==12:
-        son=son+' trillion'
+        son = f'{son} trillion'
     sonlar.append(son)
 sonlar.reverse()
 for son in sonlar:
