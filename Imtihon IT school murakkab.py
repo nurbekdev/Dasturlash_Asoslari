@@ -36,11 +36,7 @@ qiwi_pass=1223
 
 answer=input('Bizda mavjud kartalar "Humo" ,"Uzcard","Qiwi","VISA" \nKarta nomini kiriting \n>>>')
 
-if answer.upper()=='VISA':
-    answer=answer.upper()
-else:
-    answer=answer.lower()
-
+answer = answer.upper() if answer.upper()=='VISA' else answer.lower()
 if answer=='uzcard':
     answer=uzcard
     answer_pass=uzcard_pass
@@ -65,7 +61,7 @@ while urinish!=4:
         break
     else:
         print('Parol xato!!!\nQaytadan kiriting')
-        
+
     if urinish==3:
         print('Uch marta xato kiritdingiz kartangiz bloklandi !!!')
         break

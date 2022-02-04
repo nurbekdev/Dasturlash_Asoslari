@@ -32,15 +32,13 @@ def calculator(a):
     elif '/' in a:
         b,d=a.split('/')
         javob=int(b)/int(d)
-    
+
     elif '%' in a:
         b,d=a.split('%')
         javob=int(b)%int(d)
     else:
         javob='Misol xato kiritildi'
-    if javob=='Misol xato kiritildi':
-        pass
-    else:
+    if javob != 'Misol xato kiritildi':
         javob=f'{a}={javob}'
     label=Label(oyna,text=javob,bg='red',justify=CENTER)
     label.grid(row=2,column=1)

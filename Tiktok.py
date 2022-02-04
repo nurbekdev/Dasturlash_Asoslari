@@ -19,5 +19,5 @@ while (count!=0):
     count -= 1
 print('\n COMPLATE')
 
-for i in range(1,int(n)):
+for _ in range(1,int(n)):
     pyautogui.typewrite(message+'\n')

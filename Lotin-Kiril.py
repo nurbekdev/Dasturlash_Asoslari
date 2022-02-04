@@ -16,10 +16,7 @@ oyna.title('Lotin-Kiril')
 
 def tarjima(a):
     a=str(a)
-    if a.isascii()==True:
-        javob=to_cyrillic(a)
-    else:
-        javob=to_latin(a)
+    javob = to_cyrillic(a) if a.isascii()==True else to_latin(a)
     label=Label(oyna,text=javob)
     label.pack()
 label=Label(oyna,text='Matn kiriting/Матн киритинг ')
